@@ -11,6 +11,10 @@
     body {
         font-family: Arial, sans-serif;
         margin: 20px;
+        background-image: url('L.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white;
     }
 
     h1,
@@ -44,12 +48,14 @@
     <h2><B>About Me</B></h2>
      <img src="jesse.jpg" alt="Your Name" style="max-width: 300px; border-radius: 50%; margin-bottom: 20px;">
     <p>
-        I am JESSE FIRMIN MALLYA, a passionate in SOFTWARE ENGINEERING. I have a background in SIMPLE WEB DEVELOPMENT, with
-        experience in HTML,PHP and CSS. I am enthusiastic about MY FAMILY.
+        I am JESSE FIRMIN MALLYA, a passionate in SOFTWARE ENGINEERING from Tanzania. I am 20 years old and I have a background in SIMPLE WEB DEVELOPMENT, with
+        experience in HTML,PHP and CSS. I am enthusiastic about MY FAMILY and I have a dream for creating my own website and my own company. Now im a student at DIT for IT ENGINERING.
     </p>
 
     <a href="#skills" class="button" onclick="showSection('skills')">Skills</a>
     <a href="#contact" class="button" onclick="showSection('contact')">Contact</a>
+    <a href="#education" class="button" onclick="showSection('education')">Education</a>
+
 
     <!-- Contacts Section -->
     <div id="contact" class="hidden">
@@ -61,17 +67,45 @@
         GitHub: [firminjr26]<br>
     </p>
     </div>
+    <!-- Education Section -->
+<div id="education" class="hidden">
+    <h2>Education</h2>
+    <p>
+        I have pursued my education in:
+        <br>
+        - Form iv at Centennial Christain Seminary (CCS) I finished with 1.7
+        <br>
+        - Now im doing DIPLOMA IN IT ENGINEERING at DAR ES SALAAM INSTITUTE OF TECHNOLOGY (DIT)
+        <br>
+        <!-- You can add more details about your education -->
+    </p>
+</div>
+
 
     <!-- Skills Section -->
-     <div id="skills" class="hidden">
+     <!-- Skills Section -->
+<div id="skills" class="hidden">
     <h2>Skills</h2>
     <ul>
-        <li>WEB DEVELOMENT</li>
-        <li>HTML,CSS AND PHP</li>
-        
-        <!-- Add more skills as needed -->
+        <li>
+            <h3>Web Development</h3>
+            <li>example of the wed development i created</li>
+            <img src="yoooo.jpg" alt="Web Development" style="max-width: 200px;">
+             <img src="yoooooooooo3333.jpg" alt="Web Development" style="max-width: 200px;">
+            
+            <p>Proficient in HTML, CSS, and PHP</p>
+        </li>
+        <!-- Add more skills with images as needed -->
+        <li>
+            <h3>Project Management</h3>
+            <li>example of the projects i did</li>
+            <img src="yooo4444.jpg" alt="Project Management" style="max-width: 200px;">
+             <img src="yoooooo rrrr.jpg" alt="Project Management" style="max-width: 200px;">
+            <p>Experienced in organizing and managing software projects</p>
+        </li>
     </ul>
-     </div>
+</div>
+
      <script>
         function showSection(sectionId) {
             const sections = document.querySelectorAll('div[id]');
