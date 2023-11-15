@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    /* Adding a light background color */
+}
+
+h1,
+h2,
+p {
+    margin-bottom: 15px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+    /* Adding a bit of space between buttons */
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Styling the sections */
+#contact,
+#skills {
+    background-color: #fff;
+    /* Setting a white background for sections */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Adding a subtle shadow for depth */
+    margin-bottom: 20px;
+}
+
+#contact h2,
+#skills h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+#contact p,
+#skills ul {
+    margin-bottom: 0;
+}
+
+/* Styling the list items */
+#skills ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#skills ul li {
+    margin-bottom: 8px;
+}
