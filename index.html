@@ -30,6 +30,9 @@
     .button:hover{
         background-color: #2980b9
     }
+    .hidden {
+        display: none;
+    }
         
 </style>
 </head>
@@ -44,26 +47,42 @@
         experience in HTML,PHP and CSS. I am enthusiastic about MY FAMILY.
     </p>
 
-    <a href="#skills" class="button">Skills</a>
-    <a href="#contact" class="button">Contact</a>
+    <a href="#skills" class="button" onclick="showSection('skills')">Skills</a>
+    <a href="#contact" class="button" onclick="showSection('contact')">Contact</a>
 
     <!-- Contacts Section -->
-    <h2> id="contact">Contact Information</h2>
+    <div id="contact" class="hidden">
+    <h2>Contact Information</h2>
     <p>
         You can reach me via:<br>
         Email: [jessemallya@gmail.com]<br>
         Phone: [+255653294241]<br>
         GitHub: [firminjr26]<br>
     </p>
+    </div>
 
     <!-- Skills Section -->
-    <h2 id="skills">Skills</h2>
+     <div id="skills" class="hidden">
+    <h2>Skills</h2>
     <ul>
         <li>WEB DEVELOMENT</li>
         <li>HTML,CSS AND PHP</li>
         
         <!-- Add more skills as needed -->
     </ul>
+     </div>
+     <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('div[id]');
+            sections.forEach(section => {
+                if (section.id === sectionId) {
+                    section.classList.remove('hidden');
+                } else {
+                    section.classList.add('hidden');
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
